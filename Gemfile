@@ -15,14 +15,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+group :development, :test do
+	gem 'rspec-rails'
+end
 
-# Use unicorn as the app server
-# gem 'unicorn'
+group :test do 
+	gem 'capybara'
+end
 
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
